@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .price-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .perfect-pricing-frame {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .perfect-price-heading {
+    display: flex;
+    flex-direction: row;
+    width: 580px;
+  }
+  
+  .perfect-price-heading h3 {
+    width: 560px;
+    height: 48px;
+    font-family: "Gilroy-Bold";
+    font-size: 40px;
+    line-height: 48px;
+  
+    text-align: center;
+    color: #141414;
+  
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  
+  .perfect-pricing-frame-sub {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 40px;
+  }
+  
+  .perfect-pricing-frame-sub p {
+    text-align: center;
+  }
+  
+  .basic-card {
+    box-sizing: border-box;
+  
+    position: absolute;
+    width: 379px;
+    height: 455px;
+    left: 176px;
+    top: 304px;
+  
+    /* Neutral/White */
+  
+    background: #ffffff;
+    /* Primary/400 */
+  
+    border: 0.4px solid #005ae2;
+    /* Drop shadow */
+  
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+  }
+  
+  .professional-card {
+    position: absolute;
+    width: 410px;
+    height: 627px;
+    left: 515px;
+    top: 218px;
+  
+    /* Linear gradient */
+  
+    background: linear-gradient(180deg, #1e3448 99.99%, rgba(30, 52, 72, 0) 100%);
+    /* Drop shadow */
+  
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.05));
+    border-radius: 12px;
+  }
+  
+  .teams-card {
+    box-sizing: border-box;
+  
+    position: absolute;
+    width: 379px;
+    height: 455px;
+    left: 885px;
+    top: 304px;
+  
+    /* Neutral/White */
+  
+    background: #ffffff;
+    /* Primary/400 */
+  
+    border: 0.4px solid #005ae2;
+    /* Drop shadow */
+  
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+  }
+  
+  .card-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    margin-top: 24px;
+    margin-left: 87px;
+  }
+  
+  .professional-card-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    margin-top: 98px;
+    margin-left: 87px;
+  }
+  
+  .basic-text {
+    font-family: "Gilroy-Medium";
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #141414;
+  }
+  
+  .free-text,
+  .free-all {
+    height: 48px;
+    font-family: "Gilroy-Bold";
+    font-size: 40px;
+    text-align: center;
+    color: #141414;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  
+  
+  .professional-free-all {
+    height: 48px;
+    font-family: "Gilroy-Bold";
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  
+  .professional-text {
+    font-family: "Gilroy-Medium";
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  .basic-feature-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  .pricing-button-group{
+    display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  gap: 12px;
+  
+  position: absolute;
+  width: 412px;
+  height: 48px;
+  left: 515px;
+  top: 913px;
+  }
+  
+  
+  .pricing-button-group .select-pricing{
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 12px 24px;
+    gap: 10px;
+    color: white;
+    width: 200px;
+    height: 44px;
+    /* Primary/300 - base */
+    border-color: transparent;
+    background: #0065fe;
+    border-radius: 100px;
+  
+  }
+  
+  .pricing-button-group .custom-pricing{
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 12px 24px;
+    gap: 10px;
+    background: white;
+    width: 200px;
+    height: 44px;
+    /* Primary/300 - base */
+    border-color: #0065fe;
+    color: #0065fe;
+    border-radius: 100px;
+  
+  }
