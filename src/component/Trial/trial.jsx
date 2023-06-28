@@ -31,11 +31,11 @@ export const Trial = () => {
             <p>
               {" "}
               By Clicking TrimURL, I agree to the{" "}
-              <span style="font-weight: 600;">Terms of Service, </span>
+              <span style={{fontWeight: "600"}}>Terms of Service, </span>
             </p>
             <p>
               {" "}
-              <span style="font-weight: 600;">Privacy Policy</span> and Use of
+              <span style={{fontWeight: "600"}}>Privacy Policy</span> and Use of
               Cookies.{" "}
             </p>
           </div>

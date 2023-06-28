@@ -2,14 +2,14 @@ import React from "react";
 import './onestop.css';
 
 // change the class to className and import the icons and convert all inline stylings
-export const OneStop = () =>{
+const Onestop = () =>{
     return(
         <div className="onestop-container">
         <div className="onestop-container-top">
           <div className="first-frame">
             <p>
               One Stop.<br />Four
-              <span style="color: #005ae2;">Possibilities</span>.
+              <span style={{color: "#005ae2;"}}>Possibilities</span>.
             </p>
           </div>
           <div className="second-frame">
@@ -28,13 +28,13 @@ export const OneStop = () =>{
             <div className="second-frame-details">
               <div className="second-frame-heading">
                 <h3>1B</h3>
-                <p style="width: 150px">Clicked & Scanned connections</p>
+                <p style={{width:"150px"}}>Clicked & Scanned connections</p>
               </div>
             </div>
             <div className="second-frame-details">
-              <div style="width: 200px" className="second-frame-heading">
+              <div style={{width:"200px"}} className="second-frame-heading">
                 <h3>400k</h3>
-                <p style="width: 120px">App Integrations</p>
+                <p style={{width:"120px"}}>App Integrations</p>
               </div>
             </div>
           </div>
@@ -44,7 +44,7 @@ export const OneStop = () =>{
           <div className="bottom-left">
             <div className="bottom-left-title">
               
-              <p>Why Choose <span style="color: #005ae2">Scissors</span></p>
+              <p>Why Choose <span style={{color: "#005ae2"}}>Scissors</span></p>
             </div>
             <div className="bottom-left-text">
               <p>
@@ -122,3 +122,6 @@ export const OneStop = () =>{
       </div>
     );
 }
+
+
+export default Onestop;

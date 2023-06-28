@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import questions from "./questions";
 import "./faq.css";
 import SingleQuestion from "./SingleQuestion";
 

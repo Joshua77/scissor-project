@@ -2,12 +2,12 @@ import React from "react";
 import './footer.css';
 
 // change the class to className and import the icons and convert all inline stylings
-export const Footer = () =>{
+const Footer = () =>{
     return(
         <div className="footer-container">
         <div className="top-container">
           <div className="top-button-container">
-            <h2 style="color: white">Revolutionizing Link Optimization</h2>
+            <h2 style = {{color: "white"}}>Revolutionizing Link Optimization</h2>
             <button>Get Started</button>
           </div>
         </div>
@@ -15,7 +15,7 @@ export const Footer = () =>{
         <div className="bottom-container">
           <div className="bottom-container-content">
             <div className="social-frame">
-              <div><img style= "color: black;"src ="/assets/Logo.png" alt="black-logo"/></div>
+              <div><img style= {{color: "black"}}src ="/assets/Logo.png" alt="black-logo"/></div>
               <div className="social-media-frame">
                   
                   <img src="/assets/twitter 1.png" alt="twitter"/>
@@ -105,3 +105,5 @@ export const Footer = () =>{
       </div>
     );
 }
+
+export default Footer;
