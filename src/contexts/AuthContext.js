@@ -1,10 +1,10 @@
 import React, { createContext, useContext, useEffect, useState } from "react"
-import { auth } from "./utils/init-firebase"
-import { CreateUserWithEmailAndPassword, SigninWithEmailAndPassword, sendPasswordResetEmail, onAuthStateChanged, signInWithPopup, GoogleAuthProvider, signOut, confirmPaawordReset, } from "firebase/auth"
+import { auth } from "../utils/init-firebase"
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword, sendPasswordResetEmail, onAuthStateChanged, signInWithPopup, GoogleAuthProvider, signOut, confirmPasswordReset, } from "firebase/auth"
 
 const AuthContext = createContext({
     currentUser: null,
-    SigninWithEmailAndPassword: () => Promise,
+    signInWithEmailAndPassword: () => Promise,
     sendPasswordResetEmail: () => Promise,
     logout: () => Promise,
     forgotPassword: () => Promise,
@@ -27,19 +27,19 @@ export default function AuthContextProvider({children}) {
     useEffect(() =>{
 
         function login(email, password){
-            return SigninWithEmailAndPassword(auth, email, password)
+            return signInWithEmailAndPassword(auth, email, password)
         }
 
         function register(email, password){
-            return CreateUserWithEmailAndPassword(auth, email, password)
+            return createUserWithEmailAndPassword(auth, email, password)
         }
 
         function forgotPassword(email){
-            return sendPasswordResetEmail(auth, email, { url: `http://localhost:3000/login`,})
+            return sendPasswordResetEmail(auth, email, { url: `http://localhost:3000/Login`,})
         }
 
         function resetPassword(oobCode, newPassword){
-            return confirmPaawordReset(auth, oobCode, newPassword)
+            return confirmPasswordReset(auth, oobCode, newPassword)
         }
 
         function logout(){
