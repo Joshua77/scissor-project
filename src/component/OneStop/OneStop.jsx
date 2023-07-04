@@ -1,5 +1,9 @@
 import React from "react";
 import './onestop.css';
+import activity from "../../assets/activity.png"
+import edit from '../../assets/edit.png'
+import link2 from '../../assets/link-2.png'
+import grid from '../../assets/grid.png'
 
 // change the class to className and import the icons and convert all inline stylings
 const Onestop = () =>{
@@ -8,8 +12,8 @@ const Onestop = () =>{
         <div className="onestop-container-top">
           <div className="first-frame">
             <p>
-              One Stop.<br />Four
-              <span style={{color: "#005ae2;"}}>Possibilities</span>.
+              One Stop.<br />
+              Four <span style={{color: "#005ae2"}}>Possibilities</span>.
             </p>
           </div>
           <div className="second-frame">
@@ -63,7 +67,7 @@ const Onestop = () =>{
             <div className="feature-onetwo">
               <div className="feature-one">
                 <div className="bluecircle">
-                  <img className="icon" src="/assets/link-2.png" alt="url-link" />
+                  <img className="icon" src={link2} alt="url-link" />
                 </div>
                 <div>
                   <h3>Url Shortening</h3>
@@ -76,7 +80,7 @@ const Onestop = () =>{
               </div>
               <div className="feature-two">
                 <div className="bluecircle">
-                  <img className="icon" src="/assets/edit.png" alt="edit" />
+                  <img className="icon" src={edit} alt="edit" />
                 </div>
                 <div>
                   <h3>Custom URLs</h3>
@@ -92,7 +96,7 @@ const Onestop = () =>{
             <div className="feature-threefour">
               <div className="feature-three">
                 <div className="bluecircle">
-                  <img className="icon" src="/assets/grid.png" alt="edit" />
+                  <img className="icon" src={grid} alt="edit" />
                 </div>
                 <div>
                   <h3>QR Codes</h3>
@@ -105,7 +109,7 @@ const Onestop = () =>{
               </div>
               <div className="feature-four">
                 <div className="bluecircle">
-                  <img className="icon" src="/assets/activity.png" alt="edit" />
+                  <img className="icon" src={activity} alt="edit" />
                 </div>
                 <div>
                   <h3>Data Analytics</h3>

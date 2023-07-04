@@ -2,7 +2,7 @@ import React from "react";
 import "./trial.css";
 
 // change the class to className and import the icons and convert all inline stylings
-export const Trial = () => {
+const Trial = () => {
   return (
     <div className="free-demo">
       <div className="main">
@@ -46,3 +46,6 @@ export const Trial = () => {
     </div>
   );
 };
+
+
+export default Trial;

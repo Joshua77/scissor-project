@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-import { Link, useNavigate, useLocation } from "react-router-dom";
+import { Link, useHistory, useLocation } from "react-router-dom";
 //import { Layout } from "../components/Layout";
 import { useAuth } from "../contexts/Authcontext";
 //import useMounted from "../hooks/useMounted";
@@ -9,38 +9,37 @@ import "./register.css";
 
 
 export default function Registerpage() {
-  const navigate = useNavigate();
+ // const history = useHistory();
+  const { signInWithGoogle, register } = useAuth();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
-  const { register, signInWithGoogle } = useAuth();
+  //const [isSubmitting, setIsSubmitting] = useState(false);
+  //const toast = useToast();
+  //const mounted = useRef(false);
+  //const location = useLocation();
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setError("");
-    try {
-      await register(email, password);
-      navigate("/account");
-    } catch (err) {
-      setError(err.message);
-    }
-  };
+  //const mounted = useMounted();
 
-  const handleGoogleSignIn = async (e) => {
-    e.preventDefault();
-    try {
-      await signInWithGoogle();
-      navigate("/account");
-    } catch (error) {
-      console.log(error.message);
-    }
-  };
-  
+  function handleRedirectToOrBack() {
+    history.replace(location.state?.from ?? "/Account");
+  }
+
+  onSubmit={async (e) => {e.preventDefault();
+                // your login logic here
+                setIsSubmitting(true);
+                register(email, password)
+                .then((res) => {
+                    handleRedirectToOrBack();
+                })
+                .catch((error) => {
+                console.log(error.message);})
+                .finally(() => {
+                 mounted.current && setIsSubmitting(false);
+                });
+                }}
 
   return (
     <>
-    {error ? <div>{error}</div> : null}
-    <form onSubmit={handleSubmit}>
     <div className="register-container" >
           <div> Sign Up with: </div>
           <div className="google-apple-signup">
@@ -48,7 +47,14 @@ export default function Registerpage() {
             {" "}
              <img src="../assets/google.png" alt="googgle" />
              <button
-              onClick={handleGoogleSignIn}
+              onClick={() =>
+                signInWithGoogle()
+                  .then((user) => {
+                    handleRedirectToOrBack();
+                    console.log(user);
+                  })
+                  .catch((e) => console.log(e.message))
+              }
              >
               {" "}
               Google
@@ -69,7 +75,6 @@ export default function Registerpage() {
           <div className="signup-form">
           <input
             type="email"
-            name="email"
             autoComplete="email"
             value={email}
             required
@@ -79,7 +84,6 @@ export default function Registerpage() {
           </div>
           <div className="signup-form">
             <input
-            name="password"
             type="password"
             autoComplete="password"
             value={password}
@@ -91,7 +95,6 @@ export default function Registerpage() {
 
           <div className="signup-form">
             <input
-            name="password"
             type="password"
             placeholder="Retype Password"
             value={password}
@@ -107,7 +110,7 @@ export default function Registerpage() {
           6 or more characters, one number, one uppercase & one lowercase
         </p>
 
-        <button type="submit" className="signup-btn" >
+        <button type="submit" className="signup-btn">
             {" "} Sign Up with Email{" "}
         </button>
 
@@ -118,7 +121,6 @@ export default function Registerpage() {
       
       
     </div>
-    </form>
     </>
   )
 };

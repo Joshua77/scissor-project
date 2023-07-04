@@ -1,7 +1,7 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
-import Home from '../../pages/Home'
-import "./hero.css";
+import { NavLink } from "react-router-dom";
+//import Home from '../../pages/Home'
+import "./navbar.css";
 import logo from "../../assets/Logo.png";
 
 const NavBar = () => {
@@ -13,62 +13,49 @@ const NavBar = () => {
             <img src={logo} alt="scissors logo" />
           </div>
           <div className="link-group">
-            <ul className="section-links">
+            <div className="section-links">
               <li style={{ color: "#0065fe" }}>
-                <NavLink to="/account" name="My URLs" />
-                My URLs
+                <NavLink to="/login" name="My URLs">
+                  My URLs{" "}
+                </NavLink>
               </li>
               <li>
-                <NavLink to="/" name="Features" />
-                Features
+                <NavLink to="/register" name="Features">
+                  Features{" "}
+                </NavLink>
               </li>
               <li>
-                <NavLink to="/pricing" name="Pricing" />
-                Pricing
+                <NavLink to="/pricing" name="Pricing">
+                  Pricing{" "}
+                </NavLink>
               </li>
               <li>
-                <NavLink to="/account" name="Analytics" />
-                Analytics
+                <NavLink to="/account" name="Analytics">
+                  Analytics{" "}
+                </NavLink>
               </li>
               <li>
-                <NavLink to="/" name="FAQs" />
-                FAQs
+                <NavLink to="/" name="FAQs">
+                  FAQs{" "}
+                </NavLink>
               </li>
-            </ul>
+            </div>
           </div>
           <div className="login-container">
             <p>
-              <NavLink
-                to="/pages/login"
-                name="Log in"
-                onClick={async (e) => {
-                  e.preventDefault();
-                  // await login()
-                }}
-              />
-              Log in
+              <NavLink to="/login" name="Log in">
+                Log in{" "}
+              </NavLink>
             </p>
             <button>
               {" "}
-              <NavLink
-                to="/pages/signup"
-                name="Try for free"
-                onClick={async (e) => {
-                  e.preventDefault();
-                  //  await login()
-                }}
-              />
-              Try for Free
+              <NavLink to="/register" name="Try for free">
+                Try for Free{" "}
+              </NavLink>
             </button>
           </div>
         </div>
       </div>
-
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/" element={<Home />} />
-      </Routes>
     </>
   );
 };

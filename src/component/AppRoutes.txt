@@ -1,7 +1,8 @@
 import React from 'react'
 import {
   BrowserRouter as Router,
-  Redirect,
+  Navigate,
+  Routes,
   Route,
   Switch,
   useLocation,
@@ -10,18 +11,18 @@ import  { useAuth }  from '../contexts/Authcontext'
 import ForgotPasswordPage from '../pages/ForgotPassword'
 import Home from '../pages/Home'
 import Loginpage from '../pages/Login'
-//import NotfoundPage from '../pages/NotfoundPage'
-//import Accountpage from '../pages/account'
+import NotfoundPage from '../pages/NotFound'
+import Accountpage from '../pages/Account'
 import Registerpage from '../pages/Register'
 import ResetPasswordPage from '../pages/ResetPassword'
 //import TestPage from '../pages/TestPage'
-//import LinkRedirect from '../component/LinkRedirect/index';
+import LinkRedirect from '../component/LinkRedirect/index';
 
 export default function AppRouter(props) {
   return (
     <>
       <Router>
-        <Switch>
+        <Routes>
           <Route exact path='/' component={Home} />
           <ProtectedRoute exact path='/Login' component={Loginpage} />
           <ProtectedRoute exact path='/Register' component={Registerpage} />
@@ -40,7 +41,7 @@ export default function AppRouter(props) {
             <LinkRedirect />
           </Route>
           <Route exact path='*' component={NotfoundPage} />
-        </Switch>
+        </Routes>
       </Router>
     </>
   )
@@ -60,7 +61,7 @@ function ProtectedRoute(props) {
     path === '/reset'
   ) {
     return currentUser ? (
-      <Redirect to={location.state?.from ?? '/account'} />
+      <Navigate to={location.state?.from ?? '/account'} />
     ) : (
       <Route {...props} />
     )
@@ -68,7 +69,7 @@ function ProtectedRoute(props) {
   return currentUser ? (
     <Route {...props} />
   ) : (
-    <Redirect
+    <Navigate
       to={{
         pathname: '/login',
         state: { from: path },

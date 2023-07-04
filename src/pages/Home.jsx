@@ -1,8 +1,11 @@
-const Home =()=>{
+import React from "react";
+import Layout from "../component/Layout";
+
+export default function Home () {
     return(
-        <div>DIV</div>
+        <>
+           <Layout /> 
+        </>
+        
     )
 }
-
-
-export default Home;

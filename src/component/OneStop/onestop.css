@@ -20,7 +20,8 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 60px 140px;
+    padding: 60px 60px;
+   
     gap: 120px;
     margin: 0;
     background: #f9fbfd;
@@ -33,7 +34,7 @@ body {
     align-items: center;
     padding: 0px;
     gap: 10px;
-    margin-right: 300px;
+    margin-right: 270px;
     width: 337px;
     height: 96px;
     flex: none;
@@ -140,14 +141,14 @@ body {
     gap: 96px;
     width: 1202.1px;
     height: 504px;
-    margin-left: 140px;
+    margin-left: 20px;
     margin-top: 96px;
   }
   
   .bottom-left {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding: 0px;
     gap: 16px;
     /*width: 398.1px;*/

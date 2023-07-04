@@ -64,7 +64,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 1440px;
+  width: 100%;
 }
 
 .social-frame {
@@ -84,14 +84,13 @@
   flex-direction: row;
   gap: 8px;
   justify-content: space-evenly;
-  /*width: 200px;*/
 }
 
 /*VISIT THIS LATER*/
-.second-frame img {
+.footer-second-frame img {
   max-width: 100px;
 }
-.first-frame {
+.footer-first-frame {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -108,7 +107,7 @@
   flex-grow: 0;
 }
 
-.second-frame {
+.footer-second-frame {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -125,10 +124,10 @@
   flex-grow: 0;
 }
 
-.second-frame .second-frame-top,
-.third-frame .third-frame-top,
-.first-frame .first-frame-top,
-.fourth-frame .fourth-frame-top {
+.footer-second-frame .footer-second-frame-top,
+.footer-third-frame .footer-third-frame-top,
+.footer-first-frame .footer-first-frame-top,
+.footer-fourth-frame .footer-fourth-frame-top {
   display: flex;
   flex-direction: column;
   height: 128px;
@@ -136,15 +135,15 @@
   margin-bottom: 24px;
 }
 
-.first-frame .first-frame-bottom,
-.second-frame .second-frame-bottom,
-.third-frame .third-frame-bottom {
+.footer-first-frame .footer-first-frame-bottom,
+.footer-second-frame .footer-second-frame-bottom,
+.footer-third-frame .footer-third-frame-bottom {
   gap: 6px;
   display: flex;
   flex-direction: column;
 }
 
-.third-frame {
+.footer-third-frame {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -161,7 +160,7 @@
   flex-grow: 0;
 }
 
-.fourth-frame {
+.footer-fourth-frame {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -175,10 +174,10 @@
   flex-grow: 0;
 }
 
-.first-frame h4,
-.second-frame h4,
-.third-frame h4,
-.fourth-frame h4 {
+.footer-first-frame h4,
+.footer-second-frame h4,
+.footer-third-frame h4,
+.footer-fourth-frame h4 {
   font-family: "Gilroy-Bold";
   font-size: 16px;
   line-height: 24px;
@@ -187,10 +186,10 @@
 }
 
 .footer-bottom p,
-.first-frame p,
-.second-frame p,
-.third-frame p,
-.fourth-frame p {
+.footer-first-frame p,
+.footer-second-frame p,
+.footer-third-frame p,
+.footer-fourth-frame p {
   font-family: "Gilroy-Medium";
   font-size: 16px;
   color: #112232;
