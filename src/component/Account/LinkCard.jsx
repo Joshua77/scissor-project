@@ -8,12 +8,7 @@ const LinkCard = ({id, createdAt, longURL, shortCode, name, totalClicks, copyLin
 
   return (
   <>
-    <section className="dashboard">
-      <div className="create-new">
-        <div className="links">Links</div>
-        <button>Create New</button>
-      </div>
-    </section>
+    
 
     <div className="container-top">
       <h3>Created at Date</h3>

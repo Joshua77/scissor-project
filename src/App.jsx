@@ -3,7 +3,8 @@ import ForgotPasswordPage from './pages/ForgotPassword'
 import Loginpage from './pages/Login'
 import Home from './pages/Home'
 import Registerpage from './pages/Register'
-import Accountpage from './pages/Account'
+//import Account from './component/Account/Accountpage'
+import Account from './component/Account/index'
 import ResetPasswordPage from './pages/ResetPassword'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import ProtectedRoute from './component/ProtectedRoute'
@@ -19,12 +20,11 @@ function App(props) {
   return (
     <AuthContextProvider>
         <Routes>
-          <Route exact path='/' element={<Accountpage />} />
+          <Route exact path='/' element={<Home />} />
           <Route exact path='/login' element ={<Loginpage />} />
           <Route exact path='/register' element={<Registerpage />} />
           <Route exact path='/account' element={
-            <Accountpage />
-            } />
+            <Account /> } />
           <Route exact path='/forgot' element={
             <ForgotPasswordPage />
             } />

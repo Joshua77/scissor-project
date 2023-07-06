@@ -1,0 +1,6 @@
+  apiKey: "AIzaSyDmyzCpxf-qoAtpG6_G3ppWPz-oND2fuFU",
+  authDomain: "scissor-link-app.firebaseapp.com",
+  projectId: "scissor-link-app",
+  storageBucket: "scissor-link-app.appspot.com",
+  messagingSenderId: "659882761875",
+  appId: "1:659882761875:web:119d37a268793d5ac1b766"

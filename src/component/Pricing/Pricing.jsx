@@ -55,35 +55,6 @@ const Pricing = () => {
             </div>
           </div>
         </div>
-        <div className="teams-card">
-          <div className="card-items">
-            <div className="basic-text"> Teams </div>
-            <div className="free-text">$25/month</div>
-            <div style={{ fontSize: "24px" }} class="free-all">
-              Share with up to 10 users{" "}
-            </div>
-            <div className="basic-feature-row">
-              <img src={checkboxblue} alt="checkboxblue" />
-              <p style={{ marginLeft: "10px" }}>Team Collaboration</p>
-            </div>
-            <div className="basic-feature-row">
-              <img src={checkboxblue} alt="checkboxblue" />
-              <p style={{ marginLeft: "10px" }}>User Roles & Permissions</p>
-            </div>
-            <div className="basic-feature-row">
-              <img src={checkboxblue} alt="checkboxblue" />
-              <p style={{ marginLeft: "10px" }}>Enhanced Security</p>
-            </div>
-            <div className="basic-feature-row">
-              <img src={checkboxblue} alt="checkboxblue" />
-              <p style={{ marginLeft: "10px" }}>API access</p>
-            </div>
-            <div className="basic-feature-row">
-              <img src={checkboxblue} alt="checkboxblue" />
-              <p style={{ marginLeft: "10px" }}>Dedicated Account Manager</p>
-            </div>
-          </div>
-        </div>
         <div className="professional-card">
           <div className="professional-card-items">
             <div className="professional-text"> Professional </div>
@@ -121,6 +92,36 @@ const Pricing = () => {
             </div>
           </div>
         </div>
+        <div className="teams-card">
+          <div className="card-items">
+            <div className="basic-text"> Teams </div>
+            <div className="free-text">$25/month</div>
+            <div style={{ fontSize: "24px" }} class="free-all">
+              Share with up to 10 users{" "}
+            </div>
+            <div className="basic-feature-row">
+              <img src={checkboxblue} alt="checkboxblue" />
+              <p style={{ marginLeft: "10px" }}>Team Collaboration</p>
+            </div>
+            <div className="basic-feature-row">
+              <img src={checkboxblue} alt="checkboxblue" />
+              <p style={{ marginLeft: "10px" }}>User Roles & Permissions</p>
+            </div>
+            <div className="basic-feature-row">
+              <img src={checkboxblue} alt="checkboxblue" />
+              <p style={{ marginLeft: "10px" }}>Enhanced Security</p>
+            </div>
+            <div className="basic-feature-row">
+              <img src={checkboxblue} alt="checkboxblue" />
+              <p style={{ marginLeft: "10px" }}>API access</p>
+            </div>
+            <div className="basic-feature-row">
+              <img src={checkboxblue} alt="checkboxblue" />
+              <p style={{ marginLeft: "10px" }}>Dedicated Account Manager</p>
+            </div>
+          </div>
+        </div>
+        
       </div>
 
       <div className="pricing-button-group">

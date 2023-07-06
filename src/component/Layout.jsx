@@ -15,6 +15,7 @@ const Layout = ({children}) =>{
           <NavBar />
           <Hero />
           <Onestop />
+          <Pricing />
           <Trial />        
           <Faq />
           <Footer />
