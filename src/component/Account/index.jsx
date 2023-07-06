@@ -14,7 +14,7 @@ import {
 
 //I need the Navbar, LinkCard (link dashboard), Nanoid, LinkShortenerModal (the real operation center)
 //import NavBar from "./NavBarAuth.jsx";
-import NavBar from "../NavBar/NavBar.jsx";
+import NavBarAuth from "./NavBarAuth.jsx";
 import LinkCard from "./LinkCard.jsx";
 import ShortenURLBox from "./ShortenURLBox.jsx";
 import { app, db, auth } from "../../utils/init-firebase.js";
@@ -147,7 +147,7 @@ const Account = () => {
           handleClose={() => setOpenModal(false)}
         />
       )}
-      <NavBar />
+      <NavBarAuth />
       <Box mt={{ xs: 3, sm: 5 }} p={{ xs: 2, sm: 0 }}>
         <Grid container justifyContent="center">
           <Grid item xs={12} sm={8}>
