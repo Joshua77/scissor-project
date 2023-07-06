@@ -1,5 +1,5 @@
 
-const questions = [
+const data = [
     
     {
         id: 1,
@@ -59,4 +59,4 @@ const questions = [
 ]
 
 
-export default questions;
+export default data;

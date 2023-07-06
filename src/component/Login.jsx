@@ -1,15 +1,13 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-//import React, { useState } from "react";
-//import { Link, useHistory, useLocation } from "react-router-dom";
-//import { Layout } from "../components/Layout";
+import Footer from "./Footer/footer";
 import { useAuth } from "../contexts/Authcontext";
 import useMounted from "../hooks/useMounted";
 import "./register.css";
 
-export default function Loginpage() {
+export default function Login() {
   const navigate = useNavigate();
-  const { signInWithGoogle, login, register } = useAuth();
+  const { signInWithGoogle, login} = useAuth();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");

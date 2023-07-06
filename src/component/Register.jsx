@@ -8,7 +8,7 @@ import "./register.css";
 
 
 
-export default function Registerpage() {
+export default function Register() {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");

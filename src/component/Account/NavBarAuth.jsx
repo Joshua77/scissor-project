@@ -59,7 +59,7 @@ const NavBarAuth = () => {
           <div className="login-container">
             <button onClick={handleLogout}>
               {" "}
-              <NavLink to="/register" name="Log out">
+              <NavLink to="/" name="Log out">
                 Log out{" "}
               </NavLink>
             </button>

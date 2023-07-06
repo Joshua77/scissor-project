@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./register.css";
+import "../component/register.css";
 //import { Card } from '../components/Card'
 //import { Layout } from '../components/Layout'
 import { useNavigate, useLocation } from "react-router-dom";

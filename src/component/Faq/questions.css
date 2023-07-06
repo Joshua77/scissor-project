@@ -5,6 +5,7 @@
 }
 
 
-.questions{
-    
+.faq-container{
+    display: flex;
+    flex-direction: column;
 }

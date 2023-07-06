@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 //import {AiOutlineMinus} from "react-icons/ui";
-import {AiOutlineMinus, AiOutlinePlus} from "react-icons/ai";
+// import {AiOutlineMinus, AiOutlinePlus} from "react-icons/ai";
+import plus from '../../assets/fb 4.png'
+import minus from "../../assets/google.png"
 
 const SingleQuestion = ({title, info})=>{
 //core functionality is to either show or hide the info
@@ -18,7 +20,7 @@ const SingleQuestion = ({title, info})=>{
             <header>
                 <h4>{title}</h4>
                 <button onClick={()=> setShowInfo(!setShowInfo)}>
-                   
+                   {setShowInfo ? <img src={plus} alt="toggle faq answer"/>: <img src={minus} alt="toggle faq answer"/> }
                 </button>
             </header>
             { showInfo && <p> { info }</p>}

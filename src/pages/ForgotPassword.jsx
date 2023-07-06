@@ -1,12 +1,12 @@
   import React, { useState } from 'react'
   //import { useHistory } from 'react-router-dom'
   import { useAuth } from '../contexts/Authcontext'
-  import "./register.css";
+  import "../component/register.css";
   
   export default function ForgotPasswordPage() {
-    const { forgotPassword } = useAuth()
-    const [error, setError] = useState("")
-    const [email, setEmail] = useState('')
+    const { forgotPassword } = useAuth();
+    // const [error, setError] = useState("");
+    const [email, setEmail] = useState('');
 
 
     const passwordForgot = async (e) => {

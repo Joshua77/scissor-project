@@ -23,7 +23,6 @@ import {
   doc,
   addDoc,
   getDocs,
-  updateDoc,
   serverTimestamp,
   deleteDoc,
 } from "firebase/firestore";
@@ -128,8 +127,8 @@ const Account = () => {
     [linksPathRef]
   );
 
-  const handleCopyLink = useCallback((shortUrl) => {
-    copy(shortUrl);
+  const handleCopyLink = useCallback((shortURL) => {
+    copy(shortURL);
     setNewLinkToastr(true);
   }, []);
 

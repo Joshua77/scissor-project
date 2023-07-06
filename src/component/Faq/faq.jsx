@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import "./faq.css";
+import "./questions.css";
 import SingleQuestion from "./SingleQuestion";
-import question from './question'
+import data from './data'
 
 const Faq =() => {
 
-    const [questions, setQuestions] = useState(question);
+    const [questions, setQuestions] = useState(data);
     
         return(
             <div className="faq-container">
-                <div>
+                <div className ="faq-container-content">
                     {questions.map((question)=>{
                         return(<SingleQuestion key={question.id} {...question}/>)
                     })}
