@@ -1,16 +1,11 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { app, db } from "../../utils/init-firebase"
+import { doc, getDoc,addDoc, updateDoc, increment, serverTimestamp,} from 'firebase/firestore';
+import { collection, getFirestore } from 'firebase/firestore';
 import { CircularProgress, Box, Typography } from "@mui/material";
-import {
-    collection,
-    doc,
-    addDoc,
-    getDocs,
-    updateDoc,
-    serverTimestamp,
-    deleteDoc,
-  } from "firebase/firestore";
+
+   
 
 const LinkRedirect = () => {
   const { shortCode } = useParams();
@@ -19,7 +14,7 @@ const LinkRedirect = () => {
   useEffect(() => {
     const fetchLinkDoc = async () => {
       if (shortCode.length !== 6) return setLoading(false);
-      const linkDoc = await firestore.collection("links").doc(shortCode).get();
+      const linkDoc = await getDoc(doc(db, 'links', shortCode));
       if (linkDoc.exists) {
         const { longURL, linkID, userUid } = linkDoc.data();
         await firestore
