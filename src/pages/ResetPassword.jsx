@@ -3,7 +3,7 @@ import "../component/register.css";
 //import { Card } from '../components/Card'
 //import { Layout } from '../components/Layout'
 import { useNavigate, useLocation } from "react-router-dom";
-import { useAuth } from "../../contexts/useAuth";
+import { useAuth } from "../contexts/useAuth";
 // import { useAuth } from "../contexts/Authcontext";
 
 // A custom hook that builds on useLocation to parse

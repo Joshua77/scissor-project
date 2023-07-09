@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 //import { Layout } from "../components/Layout";
 // import { useAuth } from "../contexts/Authcontext";
-import { useAuth } from "../../contexts/useAuth";
+import { useAuth } from "../contexts/useAuth";
 //import useMounted from "../hooks/useMounted";
 import "./register.css";
 

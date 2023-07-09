@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 // import { useAuth } from "../contexts/Authcontext";
-import { useAuth } from "../../contexts/useAuth";
+import { useAuth } from "../contexts/useAuth";
 import useMounted from "../hooks/useMounted";
 import "./register.css";
 
