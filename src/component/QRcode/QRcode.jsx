@@ -13,7 +13,8 @@
 import { useState, useRef } from "react";
 import { QRCodeCanvas } from "qrcode.react";
 import "./qrcodestyle.css";
-import { useAuth } from "../../contexts/Authcontext"
+import { useAuth } from "../../contexts/useAuth";
+
 
 const QRcode = () => {
   const [url, setUrl] = useState("");

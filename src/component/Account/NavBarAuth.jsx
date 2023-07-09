@@ -2,7 +2,8 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 //import { Layout } from "../components/Layout";
-import { useAuth } from "../../contexts/Authcontext";
+// import { useAuth } from "../../contexts/Authcontext";
+import { useAuth } from "../../contexts/useAuth";
 //import Home from '../../pages/Home'
 import "../../component/NavBar/navbar.css";
 import logo from "../../assets/Logo.png";

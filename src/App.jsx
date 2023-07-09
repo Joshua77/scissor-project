@@ -7,7 +7,7 @@ import Account from "./component/Account/index";
 import ResetPasswordPage from "./pages/ResetPassword";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 //import ProtectedRoute from "./component/ProtectedRoute";
-import AuthContextProvider from "./contexts/Authcontext";
+import AuthContextProvider from "./contexts/useAuth";
 import LinkRedirect from "../src/component/LinkRedirect/index";
 import QRpage from "./pages/QRpage";
 

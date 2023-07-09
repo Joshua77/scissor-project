@@ -1,6 +1,7 @@
   import React, { useState } from 'react'
   //import { useHistory } from 'react-router-dom'
-  import { useAuth } from '../contexts/Authcontext'
+  // import { useAuth } from '../contexts/Authcontext'
+  import { useAuth } from "../../contexts/useAuth";
   import "../component/register.css";
   
   export default function ForgotPasswordPage() {
