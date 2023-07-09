@@ -1,0 +1,35 @@
+[debug] [2023-07-08T01:46:25.319Z] ----------------------------------------------------------------------
+[debug] [2023-07-08T01:46:25.323Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2023-07-08T01:46:25.324Z] CLI Version:   12.4.2
+[debug] [2023-07-08T01:46:25.324Z] Platform:      win32
+[debug] [2023-07-08T01:46:25.325Z] Node Version:  v16.17.1
+[debug] [2023-07-08T01:46:25.326Z] Time:          Sat Jul 08 2023 02:46:25 GMT+0100 (West Africa Standard Time)
+[debug] [2023-07-08T01:46:25.326Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-08T01:46:25.511Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-08T01:46:25.512Z] > authorizing via signed-in user (jpakinola@gmail.com)
+[debug] [2023-07-08T01:46:25.512Z] [iam] checking project scissor-link-app for permissions ["firebase.projects.get"]
+[debug] [2023-07-08T01:46:25.515Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/scissor-link-app:testIamPermissions [none]
+[debug] [2023-07-08T01:46:25.515Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/scissor-link-app:testIamPermissions x-goog-quota-user=projects/scissor-link-app
+[debug] [2023-07-08T01:46:25.516Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/scissor-link-app:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-07-08T01:46:26.864Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/scissor-link-app:testIamPermissions 200
+[debug] [2023-07-08T01:46:26.864Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/scissor-link-app:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-07-08T01:46:26.866Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app [none]
+[debug] [2023-07-08T01:46:27.408Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app 200
+[debug] [2023-07-08T01:46:27.408Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app {"projectId":"scissor-link-app","projectNumber":"659882761875","displayName":"scissor-link-app","name":"projects/scissor-link-app","resources":{"hostingSite":"scissor-link-app"},"state":"ACTIVE","etag":"1_5467be1c-2ac2-4804-beb0-5d271741e22e"}
+[info] 
+[info] === Serving from 'C:\Users\user\Desktop\Desktop\2023\Capstone\scissor-project\scissor-project'...
+[info] 
+[debug] [2023-07-08T01:46:27.420Z] defaultcredentials: writing to file C:\Users\user\AppData\Roaming\firebase\jpakinola_gmail_com_application_default_credentials.json
+[debug] [2023-07-08T01:46:27.421Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/scissor-link-app/sites 
+[debug] [2023-07-08T01:46:27.426Z] Setting GAC to C:\Users\user\AppData\Roaming\firebase\jpakinola_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\user\\AppData\\Roaming\\firebase\\jpakinola_gmail_com_application_default_credentials.json"}}
+[debug] [2023-07-08T01:46:27.430Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app/adminSdkConfig [none]
+[debug] [2023-07-08T01:46:27.956Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app/adminSdkConfig 200
+[debug] [2023-07-08T01:46:27.956Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app/adminSdkConfig {"projectId":"scissor-link-app","storageBucket":"scissor-link-app.appspot.com"}
+[debug] [2023-07-08T01:46:28.177Z] Error: listen EADDRINUSE: address already in use 127.0.0.1:5001
+    at Server.setupListenHandle [as _listen2] (node:net:1432:16)
+    at listenInCluster (node:net:1480:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (node:net:1629:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:111:8)
+[error] 
+[error] Error: An unexpected error has occurred.

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import Footer from "./Footer/footer";
 import { useAuth } from "../contexts/Authcontext";
 import useMounted from "../hooks/useMounted";
 import "./register.css";
@@ -99,10 +98,8 @@ export default function Login() {
           <p className="existing-user">
             {" "}
             Don't have an account?{" "}
-            <a href="#">
               {" "}
               <Link to="/register">Sign Up</Link>{" "}
-            </a>
           </p>
 
           <p className="signup-text">By signing up, you agree to</p>

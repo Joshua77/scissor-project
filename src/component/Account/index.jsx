@@ -14,6 +14,7 @@ import {
 
 //I need the Navbar, LinkCard (link dashboard), Nanoid, LinkShortenerModal (the real operation center)
 //import NavBar from "./NavBarAuth.jsx";
+import { useNavigate } from "react-router";
 import NavBarAuth from "./NavBarAuth.jsx";
 import LinkCard from "./LinkCard.jsx";
 import ShortenURLBox from "./ShortenURLBox.jsx";
@@ -58,6 +59,7 @@ import copy from "copy-to-clipboard";
 // ];
 
 const Account = () => {
+  const navigate = useNavigate();
   const [fetchingLinks, setFetchingLinks] = useState(true);
   const [newLinkToastr, setNewLinkToastr] = useState(false);
   const [openModal, setOpenModal] = useState(false);
@@ -161,6 +163,14 @@ const Account = () => {
                 color="primary"
               >
                 Create new
+              </Button>
+              <Button
+                onClick={() => {navigate("/qrpage");}}
+                disableElevation
+                variant="contained"
+                color="primary"
+              >
+                Generate QRcode
               </Button>
             </Box>
 

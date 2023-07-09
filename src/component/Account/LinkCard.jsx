@@ -3,7 +3,7 @@ import format from "date-fns/format";
 import './Account.css'
 import activity from "../../assets/activity.png"
 
-const LinkCard = ({id, createdAt, longURL, shortCode, name, totalClicks, copyLink, deleteLinks,}) => {
+const LinkCard = ({id, createdAt, longURL, shortCode, name, totalClicks, copyLink, deleteLink,}) => {
     const shortURL = `${window.location.host}/${shortCode}`
 
   return (
@@ -28,7 +28,7 @@ const LinkCard = ({id, createdAt, longURL, shortCode, name, totalClicks, copyLin
           <div className="short-url">
             <h4>{shortCode}</h4>
             <button onClick={() => copyLink(shortURL)} >COPY</button>
-            <button onClick={() => deleteLinks(id)} >Delete</button>
+            <button onClick={() => deleteLink(id)} >Delete</button>
           </div>
         </div>
       </div>

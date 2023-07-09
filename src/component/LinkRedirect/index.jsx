@@ -1,30 +1,39 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { app, db } from "../../utils/init-firebase"
-import { doc, getDoc,addDoc, updateDoc, increment, serverTimestamp,} from 'firebase/firestore';
-import { collection, getFirestore } from 'firebase/firestore';
+import { app, db } from "../../utils/init-firebase";
+import {
+  doc,
+  getDoc,
+  addDoc,
+  updateDoc,
+  increment,
+  serverTimestamp,
+} from "firebase/firestore";
+import { collection, getFirestore } from "firebase/firestore";
 import { CircularProgress, Box, Typography } from "@mui/material";
 
-   
+//check the updatedoc the collection I added
+//confirm that it is linkID and not linkDOCid
 
 const LinkRedirect = () => {
   const { shortCode } = useParams();
   const [loading, setLoading] = useState(true);
 
+  // const linksPath = useMemo(
+  //   () => collection(doc(db, "users", userUid), "links"),
+  //   [userUid]
+  // );
+
   useEffect(() => {
     const fetchLinkDoc = async () => {
       if (shortCode.length !== 6) return setLoading(false);
-      const linkDoc = await getDoc(doc(db, 'links', shortCode));
-      if (linkDoc.exists) {
+      const linkDoc = await getDoc(doc(db, "links", shortCode));
+
+      if (linkDoc.exists()) {
         const { longURL, linkID, userUid } = linkDoc.data();
-        await firestore
-          .collection("users")
-          .doc(userUid)
-          .collection("links")
-          .doc(linkID)
-          .update({
-            totalClicks: app.firestore.FieldValue.increment(1),
-          });
+        await updateDoc(doc(db, "users", userUid, "links", linkID), {
+          totalClicks: increment(1),
+        });
         window.location.href = longURL;
       } else {
         setLoading(false);

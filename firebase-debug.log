@@ -1,0 +1,771 @@
+[debug] [2023-07-08T00:34:15.444Z] ----------------------------------------------------------------------
+[debug] [2023-07-08T00:34:15.449Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2023-07-08T00:34:15.449Z] CLI Version:   12.4.2
+[debug] [2023-07-08T00:34:15.450Z] Platform:      win32
+[debug] [2023-07-08T00:34:15.450Z] Node Version:  v16.17.1
+[debug] [2023-07-08T00:34:16.586Z] Time:          Sat Jul 08 2023 01:34:15 GMT+0100 (West Africa Standard Time)
+[debug] [2023-07-08T00:34:16.587Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-08T00:34:18.802Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-08T00:34:18.803Z] > authorizing via signed-in user (jpakinola@gmail.com)
+[debug] [2023-07-08T00:34:18.803Z] [iam] checking project scissor-link-app for permissions ["firebase.projects.get"]
+[debug] [2023-07-08T00:34:18.804Z] > refreshing access token with scopes: []
+[debug] [2023-07-08T00:34:18.807Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-07-08T00:34:18.807Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-07-08T00:34:20.131Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-07-08T00:34:20.132Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-07-08T00:34:20.313Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/scissor-link-app:testIamPermissions [none]
+[debug] [2023-07-08T00:34:20.313Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/scissor-link-app:testIamPermissions x-goog-quota-user=projects/scissor-link-app
+[debug] [2023-07-08T00:34:20.314Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/scissor-link-app:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-07-08T00:34:21.721Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/scissor-link-app:testIamPermissions 200
+[debug] [2023-07-08T00:34:21.722Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/scissor-link-app:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-07-08T00:34:21.723Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app [none]
+[debug] [2023-07-08T00:34:22.214Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app 200
+[debug] [2023-07-08T00:34:22.214Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app {"projectId":"scissor-link-app","projectNumber":"659882761875","displayName":"scissor-link-app","name":"projects/scissor-link-app","resources":{"hostingSite":"scissor-link-app"},"state":"ACTIVE","etag":"1_5467be1c-2ac2-4804-beb0-5d271741e22e"}
+[info] 
+[info] === Serving from 'C:\Users\user\Desktop\Desktop\2023\Capstone\scissor-project\scissor-project'...
+[info] 
+[debug] [2023-07-08T00:34:22.229Z] defaultcredentials: writing to file C:\Users\user\AppData\Roaming\firebase\jpakinola_gmail_com_application_default_credentials.json
+[debug] [2023-07-08T00:34:22.230Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/scissor-link-app/sites 
+[debug] [2023-07-08T00:34:22.247Z] Setting GAC to C:\Users\user\AppData\Roaming\firebase\jpakinola_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\user\\AppData\\Roaming\\firebase\\jpakinola_gmail_com_application_default_credentials.json"}}
+[debug] [2023-07-08T00:34:22.248Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app/adminSdkConfig [none]
+[debug] [2023-07-08T00:34:22.770Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app/adminSdkConfig 200
+[debug] [2023-07-08T00:34:22.770Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app/adminSdkConfig {"projectId":"scissor-link-app","storageBucket":"scissor-link-app.appspot.com"}
+[debug] [2023-07-08T00:34:24.193Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/scissor-link-app/sites 200
+[debug] [2023-07-08T00:34:24.193Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/scissor-link-app/sites {"sites":[{"name":"projects/scissor-link-app/sites/scissor-link-app","defaultUrl":"https://scissor-link-app.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-07-08T00:34:24.194Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app/webApps/-/config [none]
+[debug] [2023-07-08T00:34:25.708Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app/webApps/-/config 200
+[debug] [2023-07-08T00:34:25.708Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app/webApps/-/config {"projectId":"scissor-link-app","appId":"1:659882761875:web:119d37a268793d5ac1b766","storageBucket":"scissor-link-app.appspot.com","apiKey":"AIzaSyDmyzCpxf-qoAtpG6_G3ppWPz-oND2fuFU","authDomain":"scissor-link-app.firebaseapp.com","messagingSenderId":"659882761875"}
+[debug] [2023-07-08T00:34:25.796Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app [none]
+[debug] [2023-07-08T00:34:26.352Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app 200
+[debug] [2023-07-08T00:34:26.352Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app {"projectId":"scissor-link-app","projectNumber":"659882761875","displayName":"scissor-link-app","name":"projects/scissor-link-app","resources":{"hostingSite":"scissor-link-app"},"state":"ACTIVE","etag":"1_5467be1c-2ac2-4804-beb0-5d271741e22e"}
+[info] i  functions: Watching "C:\Users\user\Desktop\Desktop\2023\Capstone\scissor-project\scissor-project\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\user\\Desktop\\Desktop\\2023\\Capstone\\scissor-project\\scissor-project\\functions\" for Cloud Functions..."}}
+[info] i  hosting[scissor-link-app]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[scissor-link-app]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[debug] [2023-07-08T00:34:26.784Z] Validating nodejs source
+[warn] !  functions: Couldn't find firebase-functions package in your source code. Have you run 'npm install'? 
+[debug] [2023-07-08T00:34:26.787Z] getFunctionsSDKVersion encountered error: Cannot find module 'firebase-functions'
+Require stack:
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\index.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\gcp\cloudfunctions.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\backend.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorShared.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\commandUtils.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\database-get.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\index.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\index.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js {"code":"MODULE_NOT_FOUND","requireStack":["C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\versioning.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\index.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\index.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\gcp\\cloudfunctions.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\backend.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorShared.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulator.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\controller.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\commandUtils.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\database-get.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\index.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\index.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\bin\\firebase.js"]}
+[debug] [2023-07-08T00:34:26.788Z] checkFunctionsSDKVersion encountered error: Invalid Version:  {}
+[debug] [2023-07-08T00:34:26.789Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-07-08T00:34:26.789Z] Building nodejs source
+[debug] [2023-07-08T00:34:26.790Z] Failed to find version of module node: reached end of search path C:\Users\user\Desktop\Desktop\2023\Capstone\scissor-project\scissor-project\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[debug] [2023-07-08T00:34:26.793Z] Could not parse firebase-functions version '' into semver. Falling back to parseTriggers.
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Error occurred while parsing your function triggers.
+
+C:\Users\user\Desktop\Desktop\2023\Capstone\scissor-project\scissor-project\functions\index.js:1
+import { functions, initializeApp } from "firebase-admin/app";
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1055:15)
+    at Module._compile (node:internal/modules/cjs/loader:1090:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1180:10)
+    at Module.load (node:internal/modules/cjs/loader:1004:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:839:12)
+    at Module.require (node:internal/modules/cjs/loader:1028:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at loadModule (C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\triggerParser.js:10:16)
+    at C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\triggerParser.js:34:21 {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Error occurred while parsing your function triggers.\n\nC:\\Users\\user\\Desktop\\Desktop\\2023\\Capstone\\scissor-project\\scissor-project\\functions\\index.js:1\nimport { functions, initializeApp } from \"firebase-admin/app\";\n^^^^^^\n\nSyntaxError: Cannot use import statement outside a module\n    at Object.compileFunction (node:vm:360:18)\n    at wrapSafe (node:internal/modules/cjs/loader:1055:15)\n    at Module._compile (node:internal/modules/cjs/loader:1090:27)\n    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1180:10)\n    at Module.load (node:internal/modules/cjs/loader:1004:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:839:12)\n    at Module.require (node:internal/modules/cjs/loader:1028:19)\n    at require (node:internal/modules/cjs/helpers:102:18)\n    at loadModule (C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\triggerParser.js:10:16)\n    at C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\triggerParser.js:34:21"}}
+[debug] [2023-07-08T01:00:12.761Z] ----------------------------------------------------------------------
+[debug] [2023-07-08T01:00:12.764Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2023-07-08T01:00:12.764Z] CLI Version:   12.4.2
+[debug] [2023-07-08T01:00:12.765Z] Platform:      win32
+[debug] [2023-07-08T01:00:12.765Z] Node Version:  v16.17.1
+[debug] [2023-07-08T01:00:12.766Z] Time:          Sat Jul 08 2023 02:00:12 GMT+0100 (West Africa Standard Time)
+[debug] [2023-07-08T01:00:12.766Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-08T01:00:12.951Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-08T01:00:12.952Z] > authorizing via signed-in user (jpakinola@gmail.com)
+[debug] [2023-07-08T01:00:12.952Z] [iam] checking project scissor-link-app for permissions ["firebase.projects.get"]
+[debug] [2023-07-08T01:00:12.955Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/scissor-link-app:testIamPermissions [none]
+[debug] [2023-07-08T01:00:12.955Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/scissor-link-app:testIamPermissions x-goog-quota-user=projects/scissor-link-app
+[debug] [2023-07-08T01:00:12.956Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/scissor-link-app:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-07-08T01:00:14.354Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/scissor-link-app:testIamPermissions 200
+[debug] [2023-07-08T01:00:14.354Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/scissor-link-app:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-07-08T01:00:14.356Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app [none]
+[debug] [2023-07-08T01:00:15.016Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app 200
+[debug] [2023-07-08T01:00:15.016Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app {"projectId":"scissor-link-app","projectNumber":"659882761875","displayName":"scissor-link-app","name":"projects/scissor-link-app","resources":{"hostingSite":"scissor-link-app"},"state":"ACTIVE","etag":"1_5467be1c-2ac2-4804-beb0-5d271741e22e"}
+[info] 
+[info] === Serving from 'C:\Users\user\Desktop\Desktop\2023\Capstone\scissor-project\scissor-project'...
+[info] 
+[debug] [2023-07-08T01:00:15.036Z] defaultcredentials: writing to file C:\Users\user\AppData\Roaming\firebase\jpakinola_gmail_com_application_default_credentials.json
+[debug] [2023-07-08T01:00:15.037Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/scissor-link-app/sites 
+[debug] [2023-07-08T01:00:15.050Z] Setting GAC to C:\Users\user\AppData\Roaming\firebase\jpakinola_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\user\\AppData\\Roaming\\firebase\\jpakinola_gmail_com_application_default_credentials.json"}}
+[debug] [2023-07-08T01:00:15.052Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app/adminSdkConfig [none]
+[debug] [2023-07-08T01:00:15.580Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app/adminSdkConfig 200
+[debug] [2023-07-08T01:00:15.580Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app/adminSdkConfig {"projectId":"scissor-link-app","storageBucket":"scissor-link-app.appspot.com"}
+[debug] [2023-07-08T01:00:16.656Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/scissor-link-app/sites 200
+[debug] [2023-07-08T01:00:16.657Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/scissor-link-app/sites {"sites":[{"name":"projects/scissor-link-app/sites/scissor-link-app","defaultUrl":"https://scissor-link-app.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-07-08T01:00:16.658Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app/webApps/-/config [none]
+[debug] [2023-07-08T01:00:17.645Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app/webApps/-/config 200
+[debug] [2023-07-08T01:00:17.645Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app/webApps/-/config {"projectId":"scissor-link-app","appId":"1:659882761875:web:119d37a268793d5ac1b766","storageBucket":"scissor-link-app.appspot.com","apiKey":"AIzaSyDmyzCpxf-qoAtpG6_G3ppWPz-oND2fuFU","authDomain":"scissor-link-app.firebaseapp.com","messagingSenderId":"659882761875"}
+[debug] [2023-07-08T01:00:17.710Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app [none]
+[debug] [2023-07-08T01:00:18.335Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app 200
+[debug] [2023-07-08T01:00:18.335Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app {"projectId":"scissor-link-app","projectNumber":"659882761875","displayName":"scissor-link-app","name":"projects/scissor-link-app","resources":{"hostingSite":"scissor-link-app"},"state":"ACTIVE","etag":"1_5467be1c-2ac2-4804-beb0-5d271741e22e"}
+[info] i  functions: Watching "C:\Users\user\Desktop\Desktop\2023\Capstone\scissor-project\scissor-project\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\user\\Desktop\\Desktop\\2023\\Capstone\\scissor-project\\scissor-project\\functions\" for Cloud Functions..."}}
+[info] i  hosting[scissor-link-app]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[scissor-link-app]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[debug] [2023-07-08T01:00:18.365Z] Validating nodejs source
+[warn] !  functions: Couldn't find firebase-functions package in your source code. Have you run 'npm install'? 
+[debug] [2023-07-08T01:00:18.382Z] getFunctionsSDKVersion encountered error: Cannot find module 'firebase-functions'
+Require stack:
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\index.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\gcp\cloudfunctions.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\backend.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorShared.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\commandUtils.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\database-get.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\index.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\index.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js {"code":"MODULE_NOT_FOUND","requireStack":["C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\versioning.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\index.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\index.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\gcp\\cloudfunctions.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\backend.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorShared.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulator.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\controller.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\commandUtils.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\database-get.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\index.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\index.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\bin\\firebase.js"]}
+[debug] [2023-07-08T01:00:18.405Z] checkFunctionsSDKVersion encountered error: Invalid Version:  {}
+[debug] [2023-07-08T01:00:18.407Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-07-08T01:00:18.407Z] Building nodejs source
+[debug] [2023-07-08T01:00:18.408Z] Failed to find version of module node: reached end of search path C:\Users\user\Desktop\Desktop\2023\Capstone\scissor-project\scissor-project\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[debug] [2023-07-08T01:00:18.411Z] Could not parse firebase-functions version '' into semver. Falling back to parseTriggers.
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Error occurred while parsing your function triggers.
+
+C:\Users\user\Desktop\Desktop\2023\Capstone\scissor-project\scissor-project\functions\index.js:1
+import { functions, initializeApp } from "firebase-admin/app";
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1055:15)
+    at Module._compile (node:internal/modules/cjs/loader:1090:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1180:10)
+    at Module.load (node:internal/modules/cjs/loader:1004:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:839:12)
+    at Module.require (node:internal/modules/cjs/loader:1028:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at loadModule (C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\triggerParser.js:10:16)
+    at C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\triggerParser.js:34:21 {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Error occurred while parsing your function triggers.\n\nC:\\Users\\user\\Desktop\\Desktop\\2023\\Capstone\\scissor-project\\scissor-project\\functions\\index.js:1\nimport { functions, initializeApp } from \"firebase-admin/app\";\n^^^^^^\n\nSyntaxError: Cannot use import statement outside a module\n    at Object.compileFunction (node:vm:360:18)\n    at wrapSafe (node:internal/modules/cjs/loader:1055:15)\n    at Module._compile (node:internal/modules/cjs/loader:1090:27)\n    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1180:10)\n    at Module.load (node:internal/modules/cjs/loader:1004:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:839:12)\n    at Module.require (node:internal/modules/cjs/loader:1028:19)\n    at require (node:internal/modules/cjs/helpers:102:18)\n    at loadModule (C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\triggerParser.js:10:16)\n    at C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\triggerParser.js:34:21"}}
+[debug] [2023-07-08T01:03:21.434Z] File C:\Users\user\Desktop\Desktop\2023\Capstone\scissor-project\scissor-project\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\user\\Desktop\\Desktop\\2023\\Capstone\\scissor-project\\scissor-project\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-07-08T01:03:22.448Z] Validating nodejs source
+[warn] !  functions: Couldn't find firebase-functions package in your source code. Have you run 'npm install'? 
+[debug] [2023-07-08T01:03:22.450Z] getFunctionsSDKVersion encountered error: Cannot find module 'firebase-functions'
+Require stack:
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\index.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\gcp\cloudfunctions.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\backend.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorShared.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\commandUtils.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\database-get.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\index.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\index.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js {"code":"MODULE_NOT_FOUND","requireStack":["C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\versioning.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\index.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\index.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\gcp\\cloudfunctions.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\backend.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorShared.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulator.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\controller.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\commandUtils.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\database-get.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\index.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\index.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\bin\\firebase.js"]}
+[debug] [2023-07-08T01:03:22.451Z] checkFunctionsSDKVersion encountered error: Invalid Version:  {}
+[debug] [2023-07-08T01:03:22.452Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-07-08T01:03:22.452Z] Building nodejs source
+[debug] [2023-07-08T01:03:22.453Z] Failed to find version of module node: reached end of search path C:\Users\user\Desktop\Desktop\2023\Capstone\scissor-project\scissor-project\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[debug] [2023-07-08T01:03:22.454Z] Could not parse firebase-functions version '' into semver. Falling back to parseTriggers.
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Error occurred while parsing your function triggers.
+
+C:\Users\user\Desktop\Desktop\2023\Capstone\scissor-project\scissor-project\functions\index.js:2
+import { initializeApp } from 'firebase-admin/app';
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1055:15)
+    at Module._compile (node:internal/modules/cjs/loader:1090:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1180:10)
+    at Module.load (node:internal/modules/cjs/loader:1004:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:839:12)
+    at Module.require (node:internal/modules/cjs/loader:1028:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at loadModule (C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\triggerParser.js:10:16)
+    at C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\triggerParser.js:34:21 {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Error occurred while parsing your function triggers.\n\nC:\\Users\\user\\Desktop\\Desktop\\2023\\Capstone\\scissor-project\\scissor-project\\functions\\index.js:2\nimport { initializeApp } from 'firebase-admin/app';\n^^^^^^\n\nSyntaxError: Cannot use import statement outside a module\n    at Object.compileFunction (node:vm:360:18)\n    at wrapSafe (node:internal/modules/cjs/loader:1055:15)\n    at Module._compile (node:internal/modules/cjs/loader:1090:27)\n    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1180:10)\n    at Module.load (node:internal/modules/cjs/loader:1004:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:839:12)\n    at Module.require (node:internal/modules/cjs/loader:1028:19)\n    at require (node:internal/modules/cjs/helpers:102:18)\n    at loadModule (C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\triggerParser.js:10:16)\n    at C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\triggerParser.js:34:21"}}
+[debug] [2023-07-08T01:16:07.049Z] ----------------------------------------------------------------------
+[debug] [2023-07-08T01:16:07.052Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2023-07-08T01:16:07.053Z] CLI Version:   12.4.2
+[debug] [2023-07-08T01:16:07.053Z] Platform:      win32
+[debug] [2023-07-08T01:16:07.053Z] Node Version:  v16.17.1
+[debug] [2023-07-08T01:16:07.054Z] Time:          Sat Jul 08 2023 02:16:07 GMT+0100 (West Africa Standard Time)
+[debug] [2023-07-08T01:16:07.055Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-08T01:16:07.225Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-08T01:16:07.226Z] > authorizing via signed-in user (jpakinola@gmail.com)
+[debug] [2023-07-08T01:16:07.226Z] [iam] checking project scissor-link-app for permissions ["firebase.projects.get"]
+[debug] [2023-07-08T01:16:07.228Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/scissor-link-app:testIamPermissions [none]
+[debug] [2023-07-08T01:16:07.229Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/scissor-link-app:testIamPermissions x-goog-quota-user=projects/scissor-link-app
+[debug] [2023-07-08T01:16:07.229Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/scissor-link-app:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-07-08T01:16:08.671Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/scissor-link-app:testIamPermissions 200
+[debug] [2023-07-08T01:16:08.671Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/scissor-link-app:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-07-08T01:16:08.673Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app [none]
+[debug] [2023-07-08T01:16:09.210Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app 200
+[debug] [2023-07-08T01:16:09.210Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app {"projectId":"scissor-link-app","projectNumber":"659882761875","displayName":"scissor-link-app","name":"projects/scissor-link-app","resources":{"hostingSite":"scissor-link-app"},"state":"ACTIVE","etag":"1_5467be1c-2ac2-4804-beb0-5d271741e22e"}
+[info] 
+[info] === Serving from 'C:\Users\user\Desktop\Desktop\2023\Capstone\scissor-project\scissor-project'...
+[info] 
+[debug] [2023-07-08T01:16:09.229Z] defaultcredentials: writing to file C:\Users\user\AppData\Roaming\firebase\jpakinola_gmail_com_application_default_credentials.json
+[debug] [2023-07-08T01:16:09.230Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/scissor-link-app/sites 
+[debug] [2023-07-08T01:16:09.242Z] Setting GAC to C:\Users\user\AppData\Roaming\firebase\jpakinola_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\user\\AppData\\Roaming\\firebase\\jpakinola_gmail_com_application_default_credentials.json"}}
+[debug] [2023-07-08T01:16:09.244Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app/adminSdkConfig [none]
+[debug] [2023-07-08T01:16:09.742Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app/adminSdkConfig 200
+[debug] [2023-07-08T01:16:09.742Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app/adminSdkConfig {"projectId":"scissor-link-app","storageBucket":"scissor-link-app.appspot.com"}
+[debug] [2023-07-08T01:16:10.793Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/scissor-link-app/sites 200
+[debug] [2023-07-08T01:16:10.793Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/scissor-link-app/sites {"sites":[{"name":"projects/scissor-link-app/sites/scissor-link-app","defaultUrl":"https://scissor-link-app.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-07-08T01:16:10.794Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app/webApps/-/config [none]
+[debug] [2023-07-08T01:16:11.797Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app/webApps/-/config 200
+[debug] [2023-07-08T01:16:11.798Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app/webApps/-/config {"projectId":"scissor-link-app","appId":"1:659882761875:web:119d37a268793d5ac1b766","storageBucket":"scissor-link-app.appspot.com","apiKey":"AIzaSyDmyzCpxf-qoAtpG6_G3ppWPz-oND2fuFU","authDomain":"scissor-link-app.firebaseapp.com","messagingSenderId":"659882761875"}
+[debug] [2023-07-08T01:16:12.026Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app [none]
+[debug] [2023-07-08T01:16:12.853Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app 200
+[debug] [2023-07-08T01:16:12.853Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app {"projectId":"scissor-link-app","projectNumber":"659882761875","displayName":"scissor-link-app","name":"projects/scissor-link-app","resources":{"hostingSite":"scissor-link-app"},"state":"ACTIVE","etag":"1_5467be1c-2ac2-4804-beb0-5d271741e22e"}
+[info] i  functions: Watching "C:\Users\user\Desktop\Desktop\2023\Capstone\scissor-project\scissor-project\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\user\\Desktop\\Desktop\\2023\\Capstone\\scissor-project\\scissor-project\\functions\" for Cloud Functions..."}}
+[info] i  hosting[scissor-link-app]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[scissor-link-app]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[debug] [2023-07-08T01:16:12.884Z] Validating nodejs source
+[warn] !  functions: Couldn't find firebase-functions package in your source code. Have you run 'npm install'? 
+[debug] [2023-07-08T01:16:12.887Z] getFunctionsSDKVersion encountered error: Cannot find module 'firebase-functions'
+Require stack:
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\index.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\gcp\cloudfunctions.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\backend.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorShared.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\commandUtils.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\database-get.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\index.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\index.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js {"code":"MODULE_NOT_FOUND","requireStack":["C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\versioning.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\index.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\index.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\gcp\\cloudfunctions.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\backend.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorShared.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulator.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\controller.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\commandUtils.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\database-get.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\index.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\index.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\bin\\firebase.js"]}
+[debug] [2023-07-08T01:16:12.901Z] checkFunctionsSDKVersion encountered error: Invalid Version:  {}
+[debug] [2023-07-08T01:16:12.903Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-07-08T01:16:12.903Z] Building nodejs source
+[debug] [2023-07-08T01:16:12.904Z] Failed to find version of module node: reached end of search path C:\Users\user\Desktop\Desktop\2023\Capstone\scissor-project\scissor-project\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[debug] [2023-07-08T01:16:12.943Z] Could not parse firebase-functions version '' into semver. Falling back to parseTriggers.
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Error occurred while parsing your function triggers.
+
+C:\Users\user\Desktop\Desktop\2023\Capstone\scissor-project\scissor-project\functions\index.js:12
+export const linkCreated = functions.firestore
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1055:15)
+    at Module._compile (node:internal/modules/cjs/loader:1090:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1180:10)
+    at Module.load (node:internal/modules/cjs/loader:1004:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:839:12)
+    at Module.require (node:internal/modules/cjs/loader:1028:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at loadModule (C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\triggerParser.js:10:16)
+    at C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\triggerParser.js:34:21 {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Error occurred while parsing your function triggers.\n\nC:\\Users\\user\\Desktop\\Desktop\\2023\\Capstone\\scissor-project\\scissor-project\\functions\\index.js:12\nexport const linkCreated = functions.firestore\n^^^^^^\n\nSyntaxError: Unexpected token 'export'\n    at Object.compileFunction (node:vm:360:18)\n    at wrapSafe (node:internal/modules/cjs/loader:1055:15)\n    at Module._compile (node:internal/modules/cjs/loader:1090:27)\n    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1180:10)\n    at Module.load (node:internal/modules/cjs/loader:1004:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:839:12)\n    at Module.require (node:internal/modules/cjs/loader:1028:19)\n    at require (node:internal/modules/cjs/helpers:102:18)\n    at loadModule (C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\triggerParser.js:10:16)\n    at C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\triggerParser.js:34:21"}}
+[debug] [2023-07-08T01:17:34.648Z] File C:\Users\user\Desktop\Desktop\2023\Capstone\scissor-project\scissor-project\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\user\\Desktop\\Desktop\\2023\\Capstone\\scissor-project\\scissor-project\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-07-08T01:17:35.672Z] Validating nodejs source
+[warn] !  functions: Couldn't find firebase-functions package in your source code. Have you run 'npm install'? 
+[debug] [2023-07-08T01:17:35.676Z] getFunctionsSDKVersion encountered error: Cannot find module 'firebase-functions'
+Require stack:
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\index.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\gcp\cloudfunctions.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\backend.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorShared.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\commandUtils.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\database-get.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\index.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\index.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js {"code":"MODULE_NOT_FOUND","requireStack":["C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\versioning.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\index.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\index.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\gcp\\cloudfunctions.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\backend.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorShared.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulator.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\controller.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\commandUtils.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\database-get.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\index.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\index.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\bin\\firebase.js"]}
+[debug] [2023-07-08T01:17:35.678Z] checkFunctionsSDKVersion encountered error: Invalid Version:  {}
+[debug] [2023-07-08T01:17:35.697Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-07-08T01:17:35.699Z] Building nodejs source
+[debug] [2023-07-08T01:17:35.700Z] Failed to find version of module node: reached end of search path C:\Users\user\Desktop\Desktop\2023\Capstone\scissor-project\scissor-project\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[debug] [2023-07-08T01:17:35.702Z] Could not parse firebase-functions version '' into semver. Falling back to parseTriggers.
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Error parsing triggers: Cannot find module 'firebase-functions'
+Require stack:
+- C:\Users\user\Desktop\Desktop\2023\Capstone\scissor-project\scissor-project\functions\index.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\triggerParser.js
+
+Try running "npm install" in your functions directory before deploying. {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Error parsing triggers: Cannot find module 'firebase-functions'\nRequire stack:\n- C:\\Users\\user\\Desktop\\Desktop\\2023\\Capstone\\scissor-project\\scissor-project\\functions\\index.js\n- C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\triggerParser.js\n\nTry running \"npm install\" in your functions directory before deploying."}}
+[debug] [2023-07-08T01:18:39.989Z] ----------------------------------------------------------------------
+[debug] [2023-07-08T01:18:39.992Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2023-07-08T01:18:39.993Z] CLI Version:   12.4.2
+[debug] [2023-07-08T01:18:39.993Z] Platform:      win32
+[debug] [2023-07-08T01:18:39.994Z] Node Version:  v16.17.1
+[debug] [2023-07-08T01:18:39.995Z] Time:          Sat Jul 08 2023 02:18:39 GMT+0100 (West Africa Standard Time)
+[debug] [2023-07-08T01:18:39.995Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-08T01:18:40.169Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-08T01:18:40.170Z] > authorizing via signed-in user (jpakinola@gmail.com)
+[debug] [2023-07-08T01:18:40.170Z] [iam] checking project scissor-link-app for permissions ["firebase.projects.get"]
+[debug] [2023-07-08T01:18:40.193Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/scissor-link-app:testIamPermissions [none]
+[debug] [2023-07-08T01:18:40.193Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/scissor-link-app:testIamPermissions x-goog-quota-user=projects/scissor-link-app
+[debug] [2023-07-08T01:18:40.193Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/scissor-link-app:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-07-08T01:18:41.506Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/scissor-link-app:testIamPermissions 200
+[debug] [2023-07-08T01:18:41.507Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/scissor-link-app:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-07-08T01:18:41.508Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app [none]
+[debug] [2023-07-08T01:18:42.023Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app 200
+[debug] [2023-07-08T01:18:42.024Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app {"projectId":"scissor-link-app","projectNumber":"659882761875","displayName":"scissor-link-app","name":"projects/scissor-link-app","resources":{"hostingSite":"scissor-link-app"},"state":"ACTIVE","etag":"1_5467be1c-2ac2-4804-beb0-5d271741e22e"}
+[info] 
+[info] === Serving from 'C:\Users\user\Desktop\Desktop\2023\Capstone\scissor-project\scissor-project'...
+[info] 
+[debug] [2023-07-08T01:18:42.042Z] defaultcredentials: writing to file C:\Users\user\AppData\Roaming\firebase\jpakinola_gmail_com_application_default_credentials.json
+[debug] [2023-07-08T01:18:42.043Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/scissor-link-app/sites 
+[debug] [2023-07-08T01:18:42.058Z] Setting GAC to C:\Users\user\AppData\Roaming\firebase\jpakinola_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\user\\AppData\\Roaming\\firebase\\jpakinola_gmail_com_application_default_credentials.json"}}
+[debug] [2023-07-08T01:18:42.060Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app/adminSdkConfig [none]
+[debug] [2023-07-08T01:18:42.545Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app/adminSdkConfig 200
+[debug] [2023-07-08T01:18:42.546Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app/adminSdkConfig {"projectId":"scissor-link-app","storageBucket":"scissor-link-app.appspot.com"}
+[debug] [2023-07-08T01:18:43.472Z] Error: listen EADDRINUSE: address already in use 127.0.0.1:5001
+    at Server.setupListenHandle [as _listen2] (node:net:1432:16)
+    at listenInCluster (node:net:1480:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (node:net:1629:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:111:8)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-07-08T01:18:43.519Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/scissor-link-app/sites 200
+[debug] [2023-07-08T01:18:43.519Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/scissor-link-app/sites {"sites":[{"name":"projects/scissor-link-app/sites/scissor-link-app","defaultUrl":"https://scissor-link-app.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-07-08T01:18:43.520Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app/webApps/-/config [none]
+[debug] [2023-07-08T01:20:18.615Z] ----------------------------------------------------------------------
+[debug] [2023-07-08T01:20:18.618Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2023-07-08T01:20:18.619Z] CLI Version:   12.4.2
+[debug] [2023-07-08T01:20:18.619Z] Platform:      win32
+[debug] [2023-07-08T01:20:18.620Z] Node Version:  v16.17.1
+[debug] [2023-07-08T01:20:18.621Z] Time:          Sat Jul 08 2023 02:20:18 GMT+0100 (West Africa Standard Time)
+[debug] [2023-07-08T01:20:18.621Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-08T01:20:18.814Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-08T01:20:18.815Z] > authorizing via signed-in user (jpakinola@gmail.com)
+[debug] [2023-07-08T01:20:18.815Z] [iam] checking project scissor-link-app for permissions ["firebase.projects.get"]
+[debug] [2023-07-08T01:20:18.817Z] > refreshing access token with scopes: []
+[debug] [2023-07-08T01:20:18.819Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-07-08T01:20:18.820Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-07-08T01:20:19.226Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-07-08T01:20:19.227Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-07-08T01:20:19.726Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/scissor-link-app:testIamPermissions [none]
+[debug] [2023-07-08T01:20:19.727Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/scissor-link-app:testIamPermissions x-goog-quota-user=projects/scissor-link-app
+[debug] [2023-07-08T01:20:19.727Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/scissor-link-app:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-07-08T01:20:21.017Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/scissor-link-app:testIamPermissions 200
+[debug] [2023-07-08T01:20:21.017Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/scissor-link-app:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-07-08T01:20:21.018Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app [none]
+[debug] [2023-07-08T01:20:21.558Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app 200
+[debug] [2023-07-08T01:20:21.558Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app {"projectId":"scissor-link-app","projectNumber":"659882761875","displayName":"scissor-link-app","name":"projects/scissor-link-app","resources":{"hostingSite":"scissor-link-app"},"state":"ACTIVE","etag":"1_5467be1c-2ac2-4804-beb0-5d271741e22e"}
+[info] 
+[info] === Serving from 'C:\Users\user\Desktop\Desktop\2023\Capstone\scissor-project\scissor-project'...
+[info] 
+[debug] [2023-07-08T01:20:21.572Z] defaultcredentials: writing to file C:\Users\user\AppData\Roaming\firebase\jpakinola_gmail_com_application_default_credentials.json
+[debug] [2023-07-08T01:20:21.573Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/scissor-link-app/sites 
+[debug] [2023-07-08T01:20:21.586Z] Setting GAC to C:\Users\user\AppData\Roaming\firebase\jpakinola_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\user\\AppData\\Roaming\\firebase\\jpakinola_gmail_com_application_default_credentials.json"}}
+[debug] [2023-07-08T01:20:21.589Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app/adminSdkConfig [none]
+[debug] [2023-07-08T01:20:22.150Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app/adminSdkConfig 200
+[debug] [2023-07-08T01:20:22.150Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app/adminSdkConfig {"projectId":"scissor-link-app","storageBucket":"scissor-link-app.appspot.com"}
+[debug] [2023-07-08T01:20:23.064Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/scissor-link-app/sites 200
+[debug] [2023-07-08T01:20:23.065Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/scissor-link-app/sites {"sites":[{"name":"projects/scissor-link-app/sites/scissor-link-app","defaultUrl":"https://scissor-link-app.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-07-08T01:20:23.065Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app/webApps/-/config [none]
+[debug] [2023-07-08T01:20:24.037Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app/webApps/-/config 200
+[debug] [2023-07-08T01:20:24.037Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app/webApps/-/config {"projectId":"scissor-link-app","appId":"1:659882761875:web:119d37a268793d5ac1b766","storageBucket":"scissor-link-app.appspot.com","apiKey":"AIzaSyDmyzCpxf-qoAtpG6_G3ppWPz-oND2fuFU","authDomain":"scissor-link-app.firebaseapp.com","messagingSenderId":"659882761875"}
+[debug] [2023-07-08T01:20:24.075Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app [none]
+[debug] [2023-07-08T01:20:24.566Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app 200
+[debug] [2023-07-08T01:20:24.566Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app {"projectId":"scissor-link-app","projectNumber":"659882761875","displayName":"scissor-link-app","name":"projects/scissor-link-app","resources":{"hostingSite":"scissor-link-app"},"state":"ACTIVE","etag":"1_5467be1c-2ac2-4804-beb0-5d271741e22e"}
+[info] i  functions: Watching "C:\Users\user\Desktop\Desktop\2023\Capstone\scissor-project\scissor-project\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\user\\Desktop\\Desktop\\2023\\Capstone\\scissor-project\\scissor-project\\functions\" for Cloud Functions..."}}
+[info] i  hosting[scissor-link-app]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[scissor-link-app]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[debug] [2023-07-08T01:20:24.597Z] Validating nodejs source
+[warn] !  functions: Couldn't find firebase-functions package in your source code. Have you run 'npm install'? 
+[debug] [2023-07-08T01:20:24.599Z] getFunctionsSDKVersion encountered error: Cannot find module 'firebase-functions'
+Require stack:
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\index.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\gcp\cloudfunctions.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\backend.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorShared.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\commandUtils.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\database-get.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\index.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\index.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js {"code":"MODULE_NOT_FOUND","requireStack":["C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\versioning.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\index.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\index.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\gcp\\cloudfunctions.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\backend.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorShared.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulator.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\controller.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\commandUtils.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\database-get.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\index.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\index.js","C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\bin\\firebase.js"]}
+[debug] [2023-07-08T01:20:24.607Z] checkFunctionsSDKVersion encountered error: Invalid Version:  {}
+[debug] [2023-07-08T01:20:24.617Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-07-08T01:20:24.618Z] Building nodejs source
+[debug] [2023-07-08T01:20:24.620Z] Failed to find version of module node: reached end of search path C:\Users\user\Desktop\Desktop\2023\Capstone\scissor-project\scissor-project\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[debug] [2023-07-08T01:20:24.652Z] Could not parse firebase-functions version '' into semver. Falling back to parseTriggers.
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Error parsing triggers: Cannot find module 'firebase-functions'
+Require stack:
+- C:\Users\user\Desktop\Desktop\2023\Capstone\scissor-project\scissor-project\functions\index.js
+- C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\triggerParser.js
+
+Try running "npm install" in your functions directory before deploying. {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Error parsing triggers: Cannot find module 'firebase-functions'\nRequire stack:\n- C:\\Users\\user\\Desktop\\Desktop\\2023\\Capstone\\scissor-project\\scissor-project\\functions\\index.js\n- C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\triggerParser.js\n\nTry running \"npm install\" in your functions directory before deploying."}}
+[debug] [2023-07-08T01:35:40.488Z] File C:\Users\user\Desktop\Desktop\2023\Capstone\scissor-project\scissor-project\functions\package.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\user\\Desktop\\Desktop\\2023\\Capstone\\scissor-project\\scissor-project\\functions\\package.json changed, reloading triggers"}}
+[debug] [2023-07-08T01:35:41.583Z] Validating nodejs source
+[debug] [2023-07-08T01:35:47.584Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.9.0",
+    "firebase-functions": "^4.4.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-07-08T01:35:47.584Z] Building nodejs source
+[debug] [2023-07-08T01:35:47.585Z] Failed to find version of module node: reached end of search path C:\Users\user\Desktop\Desktop\2023\Capstone\scissor-project\scissor-project\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[debug] [2023-07-08T01:35:47.599Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-07-08T01:35:47.610Z] Found firebase-functions binary at 'C:\Users\user\Desktop\Desktop\2023\Capstone\scissor-project\scissor-project\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8981
+
+[debug] [2023-07-08T01:35:51.899Z] Got response code 400; body Failed to generate manifest from function source: ReferenceError: functions is not defined
+[info] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2023-07-08T01:39:33.292Z] File C:\Users\user\Desktop\Desktop\2023\Capstone\scissor-project\scissor-project\functions\package.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\user\\Desktop\\Desktop\\2023\\Capstone\\scissor-project\\scissor-project\\functions\\package.json changed, reloading triggers"}}
+[debug] [2023-07-08T01:39:34.321Z] Validating nodejs source
+[debug] [2023-07-08T01:39:37.531Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-07-08T01:39:37.531Z] Building nodejs source
+[debug] [2023-07-08T01:39:37.532Z] Failed to find version of module node: reached end of search path C:\Users\user\Desktop\Desktop\2023\Capstone\scissor-project\scissor-project\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[debug] [2023-07-08T01:39:37.533Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-07-08T01:39:37.606Z] Found firebase-functions binary at 'C:\Users\user\Desktop\Desktop\2023\Capstone\scissor-project\scissor-project\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-07-08T01:39:37.650Z] File C:\Users\user\Desktop\Desktop\2023\Capstone\scissor-project\scissor-project\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\user\\Desktop\\Desktop\\2023\\Capstone\\scissor-project\\scissor-project\\functions\\index.js changed, reloading triggers"}}
+[info] Serving at port 8753
+
+[debug] [2023-07-08T01:39:38.657Z] Validating nodejs source
+[debug] [2023-07-08T01:39:42.249Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-07-08T01:39:42.249Z] Building nodejs source
+[debug] [2023-07-08T01:39:42.249Z] Failed to find version of module node: reached end of search path C:\Users\user\Desktop\Desktop\2023\Capstone\scissor-project\scissor-project\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[debug] [2023-07-08T01:39:42.251Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-07-08T01:39:42.256Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-07-08T01:39:42.264Z] Found firebase-functions binary at 'C:\Users\user\Desktop\Desktop\2023\Capstone\scissor-project\scissor-project\functions\node_modules\.bin\firebase-functions'
+[info] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[info] Serving at port 8811
+
+[debug] [2023-07-08T01:39:43.370Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2023-07-08T01:39:49.847Z] File C:\Users\user\Desktop\Desktop\2023\Capstone\scissor-project\scissor-project\functions\package-lock.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\user\\Desktop\\Desktop\\2023\\Capstone\\scissor-project\\scissor-project\\functions\\package-lock.json changed, reloading triggers"}}
+[debug] [2023-07-08T01:39:50.874Z] Validating nodejs source
+[debug] [2023-07-08T01:39:56.395Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-07-08T01:39:56.395Z] Building nodejs source
+[debug] [2023-07-08T01:39:56.395Z] Failed to find version of module node: reached end of search path C:\Users\user\Desktop\Desktop\2023\Capstone\scissor-project\scissor-project\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[debug] [2023-07-08T01:39:56.398Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-07-08T01:39:56.405Z] Found firebase-functions binary at 'C:\Users\user\Desktop\Desktop\2023\Capstone\scissor-project\scissor-project\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8423
+
+[debug] [2023-07-08T01:39:58.757Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2023-07-08T01:42:57.689Z] File C:\Users\user\Desktop\Desktop\2023\Capstone\scissor-project\scissor-project\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\user\\Desktop\\Desktop\\2023\\Capstone\\scissor-project\\scissor-project\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-07-08T01:42:58.706Z] Validating nodejs source
+[debug] [2023-07-08T01:43:02.151Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-07-08T01:43:02.151Z] Building nodejs source
+[debug] [2023-07-08T01:43:02.151Z] Failed to find version of module node: reached end of search path C:\Users\user\Desktop\Desktop\2023\Capstone\scissor-project\scissor-project\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[debug] [2023-07-08T01:43:02.153Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-07-08T01:43:02.161Z] Found firebase-functions binary at 'C:\Users\user\Desktop\Desktop\2023\Capstone\scissor-project\scissor-project\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8290
+
+[debug] [2023-07-08T01:43:03.359Z] Got response code 400; body Failed to generate manifest from function source: ReferenceError: functions is not defined
+[info] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2023-07-08T01:47:06.229Z] ----------------------------------------------------------------------
+[debug] [2023-07-08T01:47:06.233Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2023-07-08T01:47:06.233Z] CLI Version:   12.4.2
+[debug] [2023-07-08T01:47:06.234Z] Platform:      win32
+[debug] [2023-07-08T01:47:06.234Z] Node Version:  v16.17.1
+[debug] [2023-07-08T01:47:06.235Z] Time:          Sat Jul 08 2023 02:47:06 GMT+0100 (West Africa Standard Time)
+[debug] [2023-07-08T01:47:06.235Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-08T01:47:06.414Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-08T01:47:06.415Z] > authorizing via signed-in user (jpakinola@gmail.com)
+[debug] [2023-07-08T01:47:06.415Z] [iam] checking project scissor-link-app for permissions ["firebase.projects.get"]
+[debug] [2023-07-08T01:47:06.439Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/scissor-link-app:testIamPermissions [none]
+[debug] [2023-07-08T01:47:06.439Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/scissor-link-app:testIamPermissions x-goog-quota-user=projects/scissor-link-app
+[debug] [2023-07-08T01:47:06.440Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/scissor-link-app:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-07-08T01:47:07.701Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/scissor-link-app:testIamPermissions 200
+[debug] [2023-07-08T01:47:07.701Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/scissor-link-app:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-07-08T01:47:07.702Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app [none]
+[debug] [2023-07-08T01:47:08.179Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app 200
+[debug] [2023-07-08T01:47:08.179Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app {"projectId":"scissor-link-app","projectNumber":"659882761875","displayName":"scissor-link-app","name":"projects/scissor-link-app","resources":{"hostingSite":"scissor-link-app"},"state":"ACTIVE","etag":"1_5467be1c-2ac2-4804-beb0-5d271741e22e"}
+[info] 
+[info] === Serving from 'C:\Users\user\Desktop\Desktop\2023\Capstone\scissor-project\scissor-project'...
+[info] 
+[debug] [2023-07-08T01:47:08.196Z] defaultcredentials: writing to file C:\Users\user\AppData\Roaming\firebase\jpakinola_gmail_com_application_default_credentials.json
+[debug] [2023-07-08T01:47:08.197Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/scissor-link-app/sites 
+[debug] [2023-07-08T01:47:08.211Z] Setting GAC to C:\Users\user\AppData\Roaming\firebase\jpakinola_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\user\\AppData\\Roaming\\firebase\\jpakinola_gmail_com_application_default_credentials.json"}}
+[debug] [2023-07-08T01:47:08.213Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app/adminSdkConfig [none]
+[debug] [2023-07-08T01:47:08.756Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app/adminSdkConfig 200
+[debug] [2023-07-08T01:47:08.756Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/scissor-link-app/adminSdkConfig {"projectId":"scissor-link-app","storageBucket":"scissor-link-app.appspot.com"}
+[debug] [2023-07-08T01:47:08.820Z] Error: listen EADDRINUSE: address already in use 127.0.0.1:5001
+    at Server.setupListenHandle [as _listen2] (node:net:1432:16)
+    at listenInCluster (node:net:1480:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (node:net:1629:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:111:8)
+[error] 
+[error] Error: An unexpected error has occurred.

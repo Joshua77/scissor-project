@@ -4,6 +4,7 @@ import { unstable_createMuiStrictModeTheme as createMuiTheme } from "@material-u
 export default createMuiTheme({
   palette: {
     primary: {
+      // main: "#000",
       main: "#0065fe",
       contrastText: "#fff",
     },
@@ -15,7 +16,7 @@ export default createMuiTheme({
     fontFamily: "Gilroy-Medium, sans-serif",
     // fontFamily: "Poppins, sans-serif",
     button: {
-      textTransform: "capitalize",
+      // textTransform: "capitalize",
       fontWeight: 600,
     },
     h3: {
