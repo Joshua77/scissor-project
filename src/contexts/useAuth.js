@@ -21,6 +21,8 @@ const AuthContext = createContext({
   resetPassword: () => Promise,
 })
 
+//WE WILL BE FINE
+
 export const useAuth = () => useContext(AuthContext)
 
 export default function AuthContextProvider({ children }) {
