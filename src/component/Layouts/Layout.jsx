@@ -2,7 +2,7 @@ import React from "react";
 
 import Footer from '../Footer/footer'
 import Hero from '../Hero/hero'
-import Onestop from '../onestop/onestop'
+import Onestop from '../OneStop/onestop'
 import NavBar from '../NavBar/NavBar'
 import Pricing from '../Pricing/pricing'
 import Trial from '../Trial/Trial'
