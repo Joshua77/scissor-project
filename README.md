@@ -1,3 +1,11 @@
+# Capstone project - ALTSCHOOL FRONT END ENGINEERING DIPLOMA
+
+## Work is still ongoing - check the deployed app
+
+Vercel: https://scissor-project.vercel.app/
+
+Netlify: https://lustrous-licorice-d19933.netlify.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
