@@ -42,7 +42,8 @@ export default function ResetPasswordPage() {
           e.preventDefault();
           try {
             await resetPassword(query.get("oobCode"), password);
-            navigate.push("/login");
+            // navigate.push("/login");
+            navigate.push("https://scissor-project-hge4-eynff4sdg-joshua77.vercel.app/login")
           } catch (error) {
             console.log(error.message);
           }
